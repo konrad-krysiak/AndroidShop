@@ -2,6 +2,8 @@ package com.example.androidshop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,5 +21,16 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    internal fun getData() {
+        val retrofit = Retrofit.Builder()
+            .baseUrl(baseUrl)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+    }
+    companion object {
+        var baseUrl = "http://localhost:8080"
     }
 }
