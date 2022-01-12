@@ -43,6 +43,7 @@ class AboutFragment : Fragment() {
                 .addToBackStack(null)
                 .commit()
         }
+
         return view
     }
 
