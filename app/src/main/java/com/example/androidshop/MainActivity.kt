@@ -21,7 +21,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        var URL = "http://136f-195-150-224-31.ngrok.io"
+        var URL = "http://b8c3-195-150-224-36.ngrok.io"
     }
 
     var TAG: String = "@@@@@@@@@@@"
@@ -40,11 +40,7 @@ class MainActivity : AppCompatActivity() {
         config = RealmConfiguration.Builder().name(realmName).deleteRealmIfMigrationNeeded().build()
         backgroundThreadRealm = Realm.getInstance(config)
 
-        var init = com.example.androidshop.utils.init()
-        var products = init.getProducts()
-        Log.i(TAG, products.toString())
-//        val products = response.body()
-//        Log.i(TAG, products.toString())
+
 
 
 
