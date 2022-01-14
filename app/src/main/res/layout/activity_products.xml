@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductsActivity">
+    tools:context=".ProductsActivity"
+    android:id="@+id/clProducts">
 
     <ImageView
         android:id="@+id/imageView"
@@ -70,6 +71,7 @@
         app:layout_constraintStart_toEndOf="@+id/tvPrice"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintWidth_percent="0.2" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvProducts"

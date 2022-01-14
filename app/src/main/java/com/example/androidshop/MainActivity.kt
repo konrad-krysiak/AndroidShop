@@ -21,7 +21,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        var URL = "http://b8c3-195-150-224-36.ngrok.io"
+        var URL = "http://524d-195-150-224-36.ngrok.io"
     }
 
     var TAG: String = "@@@@@@@@@@@"
