@@ -10,10 +10,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidshop.R
 import com.example.androidshop.interfaces.ProductOnClickHandler
-import com.example.androidshop.models.response._Product
+import com.example.androidshop.models.Product
 
 class ProductAdapter(
-    private var products: List<_Product>,
+    private var products: List<Product>,
     context: Context
 ) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
     private val clickHandler: ProductOnClickHandler = context as ProductOnClickHandler

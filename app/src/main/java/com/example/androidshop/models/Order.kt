@@ -30,7 +30,7 @@ open class Order : RealmObject(), OrderInterface {
     override fun removeFromOrder(realm: Realm, product: Product) {
         realm.executeTransactionAsync { r: Realm ->
             var item = realm.where(OrderItem::class.java)
-                .equalTo("_product._id", product._id)
+                .equalTo("_product._id", product.id)
                 .findFirst()
             this.orderItems!!.remove(item)
         }

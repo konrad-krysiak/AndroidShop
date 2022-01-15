@@ -1,19 +1,19 @@
 package com.example.androidshop.api
 
-import com.example.androidshop.models.Product
+import com.example.androidshop.models.Category
 import com.example.androidshop.utils.Connection
 import io.reactivex.rxjava3.core.Observable
 import retrofit2.http.GET
 import retrofit2.http.Headers
 
-interface ProductApi {
+interface CategoryApi {
     @GET("products")
     @Headers("Content-Type: application/json")
-    fun getProducts() : Observable<List<Product>>
+    fun getCategories() : Observable<List<Category>>
 
     companion object {
-        fun create() : ProductApi {
-            return Connection().retrofit.create(ProductApi::class.java)
+        fun create() : CategoryApi {
+            return Connection().retrofit.create(CategoryApi::class.java)
         }
 
     }
