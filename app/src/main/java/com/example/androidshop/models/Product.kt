@@ -26,6 +26,6 @@ open class Product : RealmObject() {
     var category_id: Int? = null
 
     override fun toString(): String {
-        return "Product(id:${id}, name=${name}, price=${price}, category_id=${category_id}"
+        return "Product(id:${id}, name=${name}, price=${price}, category_id=${category_id})"
     }
 }

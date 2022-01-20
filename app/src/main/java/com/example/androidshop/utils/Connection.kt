@@ -9,7 +9,7 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 class Connection {
-    var URL = "http://1f50-195-150-224-31.ngrok.io"
+    var URL = "http://b4e4-195-150-224-31.ngrok.io"
     val gson = GsonBuilder().setExclusionStrategies(object: ExclusionStrategy {
         override fun shouldSkipField(f: FieldAttributes?): Boolean {
             return f!!.declaringClass == RealmObject::class.java

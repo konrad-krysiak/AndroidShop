@@ -24,4 +24,7 @@ open class Category : RealmObject() {
     
 //    @LinkingObjects("_category")
 //    val _products: RealmResults<Product>? = null
+    override fun toString(): String {
+        return "Category(id:${id}, name=${name})"
+    }
 }

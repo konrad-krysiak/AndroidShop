@@ -36,6 +36,8 @@ class ProductAdapter(
         holder.title.text = currentTodo.name
         holder.price.text = currentTodo.price.toString()
         holder.quantity.setText("0")
+
+        holder.itemView.tag = position
     }
 
     override fun getItemCount(): Int {
